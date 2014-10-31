@@ -48,5 +48,5 @@ echo $NPROCS
 echo
 
 # Ejecuto la tarea
-time ./512MB.ram
+time ./512MB
 
