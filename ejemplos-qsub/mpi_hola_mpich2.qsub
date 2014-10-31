@@ -4,24 +4,10 @@
 #PBS -N hola
 
 # Requerimientos
-#PBS -l nodes=node20+node02,walltime=00:12:00
+#PBS -l nodes=node31+node33,walltime=00:12:00
 
 # Cola de ejecucion
 #PBS -q small_jobs
-
-# Directorio de trabajo
-#PBS -d /home/siturria/gestor
-
-# Correo electronico
-#PBS -M siturria@fing.edu.uy
-
-# Email
-#PBS -m bea
-
-# n: no mail will be sent.
-# a: mail is sent when the job is aborted by the batch system.
-# b: mail is sent when the job begins execution.
-# e: mail is sent when the job terminates.
 
 # Will make all variables defined in the environment
 # from which the job is submitted available to the job.
@@ -57,8 +43,5 @@ echo $NPROCS
 echo
 
 # Ejecuto la tarea
-#time mpirun /home/siturria/gestor/mpi_hola_openmpi
-time /opt/mpiexec/bin/mpiexec /home/siturria/gestor/mpi_hola_openmpi
-#time /home/siturria/bin/openmpi-1.8.1/bin/mpirun /home/siturria/gestor/mpi_hola_openmpi_1.8
-#time /opt/mpich2/gnu/bin/mpirun /home/siturria/gestor/mpi_hola_mpich2
-#time /opt/mpiexec/bin/mpiexec /home/siturria/gestor/mpi_hola_mpich2
+time /opt/mpiexec/bin/mpiexec ./mpi_hola_mpich2
+
