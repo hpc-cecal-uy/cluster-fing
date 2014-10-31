@@ -1,3 +1,8 @@
+/*
+ Programa que pide 512MB de memoria
+ Usado para verificar que los controles de memoria funcionan bien
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -10,15 +15,9 @@ int main(int argc, char** argv) {
 
 	int i,j;
 
-        /*char arr1[1024*1024*128];
-	char arr2[1024*1024*128];
-	char arr3[1024*1024*128];
-	char arr4[1024*1024*128];*/
-
 	for (i = 0; i < num_of_arrays; i++) {
 		fprintf(stdout, "Requesting 128 MB...");
 		wasted_memory[i] = (char*)malloc(sizeof(char) * size_array_128MB);
-		//system("sleep 5");
 		fprintf(stdout, " [OK]\n");
 	}
 

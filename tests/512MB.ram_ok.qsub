@@ -4,19 +4,10 @@
 #PBS -N memoria
 
 # Requerimientos
-#PBS -l nodes=1,walltime=00:12:00,pvmem=480mb
+#PBS -l nodes=1,walltime=00:12:00,pvmem=550mb
 
 # Cola de ejecucion
 #PBS -q serial
-
-# Directorio de trabajo
-#PBS -d /home/siturria
-
-# Correo electronico
-#PBS -M siturria@fing.edu.uy
-
-# Email
-#PBS -m bea
 
 # n: no mail will be sent.
 # a: mail is sent when the job is aborted by the batch system.
@@ -57,5 +48,5 @@ echo $NPROCS
 echo
 
 # Ejecuto la tarea
-time /home/siturria/512MB.ram
+time ./512MB.ram
 

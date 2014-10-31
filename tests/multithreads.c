@@ -1,3 +1,8 @@
+/*
+ Programa que lanza N hilos y queda en loop infinito
+ Usado para probar que un trabajo con 1 core no consuma más de 100% de CPU
+ */
+
 #include <pthread.h>
 #include <stdio.h>
 #define NUM_THREADS     5

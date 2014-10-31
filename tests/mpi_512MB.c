@@ -1,3 +1,8 @@
+/*
+ Programa MPI que pide 512MB de memoria en el proceso con rank 1 y 256MB en el resto de los procesos
+ Usado para verificar que los controles de memoria funcionan bien
+ */
+
 #include <stdio.h>
 #include <mpi.h>
 
