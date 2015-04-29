@@ -1,0 +1,59 @@
+ 
+ Bienvenidos al
+   ____ _           _              _____ ___ _   _  ____ 
+  / ___| |_   _ ___| |_ ___ _ __  |  ___|_ _| \ | |/ ___|
+ | |   | | | | / __| __/ _ \ '__| | |_   | ||  \| | |  _ 
+ | |___| | |_| \__ \ ||  __/ |    |  _|  | || |\  | |_| |
+  \____|_|\__,_|___/\__\___|_|    |_|   |___|_| \_|\____|
+                                                         
+ Nodos de trabajo:
+   * node02-03,node05-09 (class0)
+                        8 nucleos, 8 GB de RAM
+                        Intel(R) Xeon(R) CPU E5430 @ 2.66GHz
+   * node20-23 (class1) 
+                        8 nucleos, 24 GB de RAM
+                        Intel(R) Xeon(R) CPU E5520 @ 2.27GHz
+   * node11,node30-32 (class2) 
+                        24 nucleos, 24 GB de RAM
+                        AMD Opteron(tm) Processor 6172 @ 2.10GHz
+   * node33-38 (class3)
+                        24 nucleos, 72 GB de RAM
+                        AMD Opteron(tm) Processor 6172 @ 2.10GHz
+   * node40 (class4) [QUICK JOBS]
+                        64 nucleos, 48 GB de RAM
+                        AMD Opteron(tm) Processor 6272 @ 2.09GHz
+   * node50-53 (class5) 
+                        16 nucleos, 64 GB de RAM
+                        Intel(R) Xeon(R) CPU E5-2650 @ 2.00GHz
+   * node60 (class6)
+                        32 nucleos, 32 GB de RAM
+                        AMD Opteron(tm) Processor 6376 @ 2.30GHz
+ 
+   Total: 488 nucleos, 1016 GB de RAM
+   (para consultar nodos offline: /opt/torque/bin/pbsnodes -l)
+
+ Colas de ejecucion:
+   * serial      1 core, hasta 240 horas de walltime
+   * small_jobs  entre 2 y 16 cores, hasta 240 horas de walltime
+   * medium_jobs entre 17 y 32 cores, hasta 96 horas de walltime
+   * big_jobs    mas de 33 cores, hasta 48 horas de walltime
+   * quick_jobs  hasta 64 cores, hasta 4 horas de walltime
+
+ Mas informacion, tutoriales, y noticias en:
+     http://www.fing.edu.uy/cluster/
+
+ Lineamientos generales de uso:
+   * No ejecutar procesos de computo y/o pesados en el nodo 'rocks-cluster'. 
+   * Usar siempre el gestor.
+   
+ Noticias:
+   * La cola quick_jobs se encuentra ONLINE.
+
+ Por dudas o consultas contactarse con:
+     cluster@fing.edu.uy
+
+Rocks 6.1 (Emerald Boa)
+Profile built 21:39 17-Apr-2013
+
+Kickstarted 18:57 17-Apr-2013
+
