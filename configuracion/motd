@@ -27,7 +27,11 @@
            Tags: class4, amd
            64 nucleos, 48 GB de RAM
            AMD Opteron(tm) Processor 6272 @ 2.09GHz
-   * node50-53 
+   * node50-51
+           Tags: class5, intel, xeonphi
+           16 nucleos, 64 GB de RAM
+           Intel(R) Xeon(R) CPU E5-2650 @ 2.00GHz
+   * node52-53
            Tags: class5, intel
            16 nucleos, 64 GB de RAM
            Intel(R) Xeon(R) CPU E5-2650 @ 2.00GHz
