@@ -4,14 +4,10 @@
 #PBS -N hola
 
 # Requerimientos
-#PBS -l nodes=node31+node33,walltime=00:12:00
+#PBS -l nodes=2,walltime=00:12:00
 
 # Cola de ejecucion
 #PBS -q small_jobs
-
-# Will make all variables defined in the environment
-# from which the job is submitted available to the job.
-#PBS -V
 
 echo Job Name: $PBS_JOBNAME
 echo Working directory: $PBS_O_WORKDIR

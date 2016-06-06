@@ -35,12 +35,29 @@
            Tags: class5, intel
            16 nucleos, 64 GB de RAM
            Intel(R) Xeon(R) CPU E5-2650 @ 2.00GHz
-   * node60 
+   * node60-61 
            Tags: class6, amd
            32 nucleos, 32 GB de RAM
            AMD Opteron(tm) Processor 6376 @ 2.30GHz
- 
+   * node70-71 [node70 uso exclusivo de cecalrp]
+           Tags: class7, intel
+           24 nucleos, 128 GB de RAM
+           Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+
    Total: 488 nucleos, 1016 GB de RAM
+
+ Intel Xeon-Phi:
+   * node50-phi y node51-phi
+           228 nucleos, 8 GB de RAM
+           Xeon Phi 31S1P @ 1.10 GHz
+
+ NVIDIA CUDA:
+   * gpupu2
+           24 nucleos, 128 GB de RAM
+           Intel(R) Xeon(R) CPU E5-2620 v2 @ 2.10GHz
+           CUDA 6.5
+           GPU 0: Tesla K40m
+           GPU 1: Tesla K40m
 
  Colas de ejecucion:
    * serial      1 core, hasta 240 horas de walltime
@@ -54,23 +71,22 @@
    * carga de los nodos    : /opt/maui/bin/diagnose -n
    * listado de trabajos   : /opt/maui/bin/showq
    * info de un trabajo    : /opt/maui/bin/checkjob <job id>
-   * cancelar un tranajo   : /opt/maui/bin/canceljob <job id>
+   * cancelar un trabajo   : /opt/maui/bin/canceljob <job id>
 
  Mas informacion, tutoriales, y noticias en:
      http://www.fing.edu.uy/cluster/
 
  Lineamientos generales de uso:
-   * No ejecutar procesos de computo y/o pesados en el nodo 'rocks-cluster'. 
-   * Usar siempre el gestor.
+   * Para acceder a las herramientas de compilacion: ssh cluster-devel
+   * No ejecutar procesos de computo y/o pesados en el nodo rocks-cluster ni cluster-devel
+   * Usar siempre el gestor!!!
    
  Noticias:
-   * La cola quick_jobs se encuentra ONLINE.
+   * La cola quick_jobs se encuentra OFFLINE!
+   * >> SE AGREGA EL NODO DE COMPILACION: cluster-devel <<
 
  Por dudas o consultas contactarse con:
      cluster@fing.edu.uy
 
-Rocks 6.1 (Emerald Boa)
-Profile built 21:39 17-Apr-2013
-
-Kickstarted 18:57 17-Apr-2013
+ Rocks 6.1 (Emerald Boa)
 
