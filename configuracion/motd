@@ -51,13 +51,20 @@
            228 nucleos, 8 GB de RAM
            Xeon Phi 31S1P @ 1.10 GHz
 
- NVIDIA CUDA:
+ Nvidia CUDA:
    * gpupu2
            24 nucleos, 128 GB de RAM
            Intel(R) Xeon(R) CPU E5-2620 v2 @ 2.10GHz
            CUDA 6.5
            GPU 0: Tesla K40m
            GPU 1: Tesla K40m
+
+ Paquetes de software:
+   * Intel Parallel Studio 2016
+           Tag: istudio
+           Path: /share/apps/intel
+   * Matlab R2014a
+           Path: /share/apps/matlab
 
  Colas de ejecucion:
    * serial      1 core, hasta 240 horas de walltime
