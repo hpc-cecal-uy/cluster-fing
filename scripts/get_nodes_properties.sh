@@ -1,0 +1,1 @@
+pbsnodes | grep "^node*\|properties ="
